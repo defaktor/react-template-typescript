@@ -1,0 +1,39 @@
+a {
+  &.btn {
+    text-decoration: none!important;
+  }
+}
+
+.btn-block {
+  display: flex;
+  font-size: 0;
+  align-items: center;
+}
+
+.btn, button, input[type='submit'] {
+  cursor: pointer;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.3s;
+  text-align: center;
+  white-space: nowrap;
+  &:focus {
+
+  }
+  &:hover {
+
+  }
+  &.disabled {
+    cursor: initial;
+  }
+
+  /* btn size */
+  /* btn size */
+
+
+  /* btn color */
+  /* btn color */
+
+}

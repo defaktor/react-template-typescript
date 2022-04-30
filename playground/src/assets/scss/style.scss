@@ -1,0 +1,58 @@
+//$colors: (
+//  red: red,
+//  green: green,
+//);
+//
+//@each $color in map-keys($colors) {
+//  :root {
+//    --color-Green: #144c32;
+//  }
+//}
+
+
+body, #root {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* zIndex */
+
+/* zIndex */
+
+/* Переменные */
+@import "vars/project-vars";
+
+@import 'vars/reboot';
+@import "fonts";
+
+@import 'vars/section';
+@import "Hx";
+/* Переменные */
+
+/* Шрифты */
+@import 'icons';
+/* Шрифты */
+
+/* simple grid Bootstrap fork*/
+@import "simple-grid";
+/* simple grid Bootstrap fork*/
+
+
+/* MainLayout */
+@import "main-layout";
+/* MainLayout */
+
+/* Components */
+@import 'btn';
+@import "../../components/Header/style";
+/* Components */
+
+
+/* other styles */
+b {
+  font-weight: $font-weight-bold;
+}
+/* other styles */

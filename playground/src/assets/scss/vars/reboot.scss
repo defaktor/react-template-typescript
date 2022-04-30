@@ -1,0 +1,63 @@
+body {
+  background-color: $bg-color;
+}
+body, button, input {
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+
+html, body {
+  color: var(--color-Black);
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base;
+  line-height: $font-line-height;
+  letter-spacing: $font-letter-spacing;
+}
+
+input[type=text] {
+  -webkit-appearance: none;
+  //-webkit-border-radius: 0;
+}
+input[type=date] {
+  -webkit-appearance: none;
+  //-webkit-border-radius: 0;
+}
+input[type=submit] {
+  -webkit-appearance: none;
+  //-webkit-border-radius: 0;
+}
+input, button {
+  outline: none;
+}
+section, div, input {
+  box-sizing: border-box;
+}
+button {
+  border: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  &:not(.btn) {
+    text-decoration: $link-decoration;
+    text-decoration-style: $link-decoration-style;
+    color: $link-color;
+    cursor: pointer;
+    transition: color 0.5s ease;
+    &:hover {
+      color: $link-hover-color;
+      text-decoration: $link-hover-decoration;
+    }
+    &:active {
+      color: $link-pressed-color;
+      text-decoration: $link-pressed-decoration;
+    }
+  }
+  &.decoration-none {
+    text-decoration: none!important;
+  }
+}

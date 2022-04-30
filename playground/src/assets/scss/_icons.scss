@@ -1,0 +1,84 @@
+$icon_font_name:"an-ico";
+@font-face {
+  font-family:$icon_font_name;
+  src: url('../fonts/icons/an-ico.eot');
+  src: url('../fonts/icons/an-ico.eot?#iefix') format('eot'),
+  url('../fonts/icons/an-ico.woff') format('woff'),
+  url('../fonts/icons/an-ico.ttf') format('truetype');
+  //url('../fonts/icons/an-ico.svg#an-ico') format('svg');
+}
+
+.an-ico {
+  display: inline-block;
+  height: 1em;
+  line-height: 1;
+  font-size: $base-ico-size;
+  &:before {
+    font-family: $icon_font_name;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.an-ico-arrow-down:before {
+  content:'\E001';
+}
+.an-ico-arrow-right:before {
+  content:'\E002';
+}
+.an-ico-arrow-up:before {
+  content:'\E003';
+}
+.an-ico-battery:before {
+  content:'\E004';
+}
+.an-ico-check:before {
+  content:'\E005';
+}
+.an-ico-cross:before {
+  content:'\E006';
+}
+.an-ico-dot:before {
+  content:'\E007';
+}
+.an-ico-email:before {
+  content:'\E008';
+}
+.an-ico-eye:before {
+  content:'\E009';
+}
+.an-ico-geo-line:before {
+  content:'\E00A';
+}
+.an-ico-location-double:before {
+  content:'\E00B';
+}
+.an-ico-location:before {
+  content:'\E00C';
+}
+.an-ico-logout:before {
+  content:'\E00D';
+}
+.an-ico-password:before {
+  content:'\E00E';
+}
+.an-ico-phone:before {
+  content:'\E00F';
+}
+.an-ico-question:before {
+  content:'\E010';
+}
+.an-ico-settings:before {
+  content:'\E011';
+}
+.an-ico-start:before {
+  content:'\E012';
+}
+.an-ico-username:before {
+  content:'\E013';
+}

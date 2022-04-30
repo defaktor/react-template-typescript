@@ -1,0 +1,31 @@
+$icon_font_name:"<%= fontName %>";
+@font-face {
+  font-family:$icon_font_name;
+  src: url('<%= fontPath %><%= fontName %>.eot');
+  src: url('<%= fontPath %><%= fontName %>.eot?#iefix') format('eot'),
+  url('<%= fontPath %><%= fontName %>.woff') format('woff'),
+  url('<%= fontPath %><%= fontName %>.ttf') format('truetype');
+  //url('<%= fontPath %><%= fontName %>.svg#<%= fontName %>') format('svg');
+}
+
+.an-ico {
+  display: inline-block;
+  height: 1em;
+  line-height: 1;
+  font-size: $base-ico-size;
+  &:before {
+    font-family: $icon_font_name;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+<% _.each(glyphs, function(glyph) { %>.an-ico-<%= glyph.fileName %>:before {
+  content:'\<%= glyph.codePoint %>';
+}
+<% }); %>

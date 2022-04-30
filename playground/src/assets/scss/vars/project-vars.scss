@@ -1,0 +1,100 @@
+$project-colors: (
+  color-Green: #00D473,
+  color-Green-dark: #00C86D,
+  color-Gray-transparent: rgba(14,16,32,0.05),
+  color-Dark-grey: #0E1020,
+  color-Grey-medium: #767983,
+  color-Gray-light: #A0A2A6,
+  color-Red: #D40048,
+);
+
+
+:root {
+  --bs-gutter-x: 10px;
+  --bs-gutter-y: 10px;
+}
+
+/* color classes generator
+
+    color-Green {
+        color: var(--color-Green);
+    }
+    .bg-color-Green {
+        background-color: var(--color-Green);
+    }
+
+*/
+
+
+:root {
+  @each $color-name, $color-value in $project-colors {
+    --#{$color-name}: #{$color-value}
+  }
+}
+@each $color-name, $color-value in $project-colors {
+  .#{$color-name} {
+    color: var(--#{$color-name})
+  }
+  .bg-#{$color-name} {
+    background-color: var(--#{$color-name})
+  }
+}
+
+  $bg-color: #fff;
+
+  $main-color: var(--color-Green);
+
+  $not-active-color: var(--color-Gray-transparent);
+
+  $font-weight-light: 300;
+  $font-weight-normal: normal;
+  $font-weight-bold: 500;
+  $font-weight-bolder: 600;
+
+  $font-weight-base: $font-weight-normal;
+
+  $font-family-base: 'Avenir Next Cyr', sans-serif;
+  $font-family-headers: 'Avenir Next Cyr', sans-serif;
+
+  $font-size-base: 18px;
+  $font-line-height: 1.33;
+  $font-letter-spacing: 0.2px;
+
+  $font-color-content: var(--color-Dark-grey);
+  $font-color-content-hover: var(--color-Dark-grey);
+  $font-color-headers: $font-color-content;
+
+  $link-color: var(--color-Dark-grey);
+  $link-decoration: underline;
+  $link-decoration-style: dashed; // default: initial
+  $link-hover-color: var(--color-Grey-medium); // ????
+  $link-hover-decoration: none;
+  $link-pressed-color: var(--color-Dark-grey);
+  $link-pressed-decoration: none;
+
+  $h1-font-size: 24px;
+  $h1-line-height: 1.25;
+  $h1-font-style: normal;
+  $h1-font-weight: $font-weight-bolder;
+
+  $base-ico-size: 30px;
+
+$option-width: 30px;
+$option-height: 30px;
+$option-font-color: $font-color-content;
+$option-font-size: 14px;
+$option-font-line-height: 1.29;
+
+$option-font-margin-left: 15px;
+$option-padding-left: 0;
+$option-border-width: 3px;
+$option-border-radius: 10px;
+$option-border-color-nocheck: var(--color-Gray-light);
+$option-border-color-check: var(--color-Dark-grey);
+$option-img-check: url("data:image/svg+xml,%3Csvg width='19' height='14' viewBox='0 0 19 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.7322 0.759353C15.7085 -0.253118 17.2915 -0.253118 18.2678 0.759353C19.2016 1.7278 19.2422 3.27181 18.3896 4.29031L18.2678 4.42583L9.76777 13.2406C8.8339 14.2091 7.34504 14.2512 6.36292 13.367L6.23223 13.2406L0.732233 7.53694C-0.244078 6.52447 -0.244078 4.88293 0.732233 3.87046C1.6661 2.90201 3.15496 2.85991 4.13708 3.74414L4.26777 3.87046L7.9995 7.74044L14.7322 0.759353Z' fill='#FFF'/%3E%3C/svg%3E%0A");
+//$option-img-check: none;
+$option-img-size: 19px 14px;
+$option-bg-color-nocheck: transparent;
+$option-bg-color-check: var(--color-Dark-grey);
+$option-bg-shadow: none;
+//$option-bg-shadow: 0 0 30px rgba(0, 98, 143, 0.15);

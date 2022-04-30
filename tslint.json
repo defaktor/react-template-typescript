@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-plugin-prettier",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "prettier": true,
+    "no-shadowed-variable": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case"
+    ],
+    "class-name": true,
+    "no-console": false,
+    "radix": false,
+    "no-unused-variable": true,
+    "no-unused-expression": false,
+    "no-empty": false
+  },
+  "rulesDirectory": ["tslint-plugin-prettier"]
+}
